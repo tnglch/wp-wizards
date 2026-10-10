@@ -26,4 +26,13 @@ in `functions.php` on each release so browsers reload the CSS.
 - The logo is `assets/img/wizards-logo.png`, not the site-wide `site_logo` option.
 - While Hestia is active, saving page 3828 in the editor resets its template to "default".
 
-Fonts are licensed under the SIL Open Font License (see `assets/fonts/OFL-*.txt`).
+## License
+
+This repository is [REUSE](https://reuse.software/) compliant; every file's copyright and
+license is declared in its header or in [`REUSE.toml`](REUSE.toml). Check with `reuse lint`.
+
+- Code (PHP, CSS, JavaScript, `theme.json`): GPL-3.0-or-later, © 2026 Giacomo Tenaglia.
+- Documentation, logo and images: CC-BY-SA-4.0, © 2026 Giacomo Tenaglia.
+- Fonts (Barlow Condensed, Source Sans 3): OFL-1.1, © their respective authors.
+
+License texts are in [`LICENSES/`](LICENSES/).

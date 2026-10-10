@@ -6,6 +6,9 @@
  * Description: Photo et appel à l'action de contact, comme la maquette v2.
  *
  * @package Wizards
+ *
+ * SPDX-FileCopyrightText: 2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 ?>

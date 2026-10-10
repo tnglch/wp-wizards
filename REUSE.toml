@@ -1,0 +1,31 @@
+version = 1
+SPDX-PackageName = "wizards"
+SPDX-PackageSupplier = "Giacomo Tenaglia <giacomo.tenaglia@gmail.com>"
+SPDX-PackageDownloadLocation = "https://github.com/tnglch/wp-wizards"
+
+# Configuration and other code files that cannot carry a comment header.
+[[annotations]]
+path = ["theme.json", ".gitignore", "REUSE.toml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+# Documentation, logo and images.
+[[annotations]]
+path = ["README.md", "DESIGN.md", "screenshot.png", "assets/img/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+# Third-party fonts, redistributed under the SIL Open Font License.
+[[annotations]]
+path = ["assets/fonts/barlow-condensed-*.woff2", "assets/fonts/OFL-barlow.txt"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 The Barlow Project Authors (https://github.com/jpt/barlow)"
+SPDX-License-Identifier = "OFL-1.1"
+
+[[annotations]]
+path = ["assets/fonts/source-sans-3-*.woff2", "assets/fonts/OFL-source-sans-3.txt"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010-2020 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'"
+SPDX-License-Identifier = "OFL-1.1"

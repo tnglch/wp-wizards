@@ -6,6 +6,9 @@
  * Description: Quatre valeurs de l'ultimate en tuiles, comme la maquette v2.
  *
  * @package Wizards
+ *
+ * SPDX-FileCopyrightText: 2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 ?>

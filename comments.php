@@ -3,6 +3,9 @@
  * Comments.
  *
  * @package Wizards
+ *
+ * SPDX-FileCopyrightText: 2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 if ( post_password_required() ) {

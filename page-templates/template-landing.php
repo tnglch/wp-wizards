@@ -8,6 +8,9 @@
  * the first section is expected to carry the page's H1.
  *
  * @package Wizards
+ *
+ * SPDX-FileCopyrightText: 2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 get_header();

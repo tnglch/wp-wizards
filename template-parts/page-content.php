@@ -5,6 +5,9 @@
  * Accepts $args['wide'] = true for the full-width template.
  *
  * @package Wizards
+ *
+ * SPDX-FileCopyrightText: 2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 $wizards_wide   = ! empty( $args['wide'] );

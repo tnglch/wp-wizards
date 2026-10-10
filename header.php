@@ -3,6 +3,9 @@
  * Site header: floating pill bar with logo and main menu.
  *
  * @package Wizards
+ *
+ * SPDX-FileCopyrightText: 2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 ?><!doctype html>
