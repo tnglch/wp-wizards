@@ -39,7 +39,6 @@ body {
 	background:
 		radial-gradient(1000px 480px at 8% 6%, #ffffff 0%, transparent 62%),
 		linear-gradient(165deg, var(--wiz-bg-a), var(--wiz-bg-b));
-	background-attachment: fixed;
 	min-height: 100vh;
 }
 
@@ -190,6 +189,12 @@ img {
 	visibility: hidden;
 	transform: translateY(-4px);
 	transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+}
+
+/* Items near the right edge open their dropdown toward the left. */
+.menu__list > li:nth-last-child(-n+2) > .sub-menu {
+	left: auto;
+	right: 0;
 }
 
 /* Keeps the pointer inside the item while it travels to the dropdown. */
