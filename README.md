@@ -1,4 +1,10 @@
+<p align="center">
+  <img src="assets/img/wizards-logo.png" alt="Wizards Ultimate Frisbee Genève logo" width="180">
+</p>
+
 # Wizards WordPress theme
+
+[![REUSE compliance](https://github.com/tnglch/wp-wizards/actions/workflows/reuse.yml/badge.svg)](https://github.com/tnglch/wp-wizards/actions/workflows/reuse.yml)
 
 Classic WordPress theme (PHP templates + `theme.json`) for [wizards.ch](https://wizards.ch/),
 Geneva's Flying Disk Wizards. Built from the v2 home page mockup; design tokens are in
@@ -24,12 +30,14 @@ in `functions.php` on each release so browsers reload the CSS.
 
 - Menu locations use Hestia's names (`primary`, `footer`) so menus stay assigned on a theme switch.
 - The logo is `assets/img/wizards-logo.png`, not the site-wide `site_logo` option.
-- While Hestia is active, saving page 3828 in the editor resets its template to "default".
+- Page 3828 is the static front page and uses the "Accueil" template.
+- Never name a CSS class after a WordPress body class (`page`, `home`, `single`...): it would also style `<body>`.
 
 ## License
 
 This repository is [REUSE](https://reuse.software/) compliant; every file's copyright and
-license is declared in its header or in [`REUSE.toml`](REUSE.toml). Check with `reuse lint`.
+license is declared in its header or in [`REUSE.toml`](REUSE.toml). Check with `reuse lint`;
+the [REUSE workflow](.github/workflows/reuse.yml) runs it on every push and pull request.
 
 - Code (PHP, CSS, JavaScript, `theme.json`): GPL-3.0-or-later, © 2026 Giacomo Tenaglia.
 - Documentation, logo and images: CC-BY-SA-4.0, © 2026 Giacomo Tenaglia.

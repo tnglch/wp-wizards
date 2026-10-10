@@ -5,14 +5,14 @@ SPDX-PackageDownloadLocation = "https://github.com/tnglch/wp-wizards"
 
 # Configuration and other code files that cannot carry a comment header.
 [[annotations]]
-path = ["theme.json", ".gitignore", "REUSE.toml"]
+path = ["theme.json", ".gitignore", ".gitattributes", "REUSE.toml"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>"
 SPDX-License-Identifier = "GPL-3.0-or-later"
 
 # Documentation, logo and images.
 [[annotations]]
-path = ["README.md", "DESIGN.md", "screenshot.png", "assets/img/**"]
+path = ["README.md", "DESIGN.md", "screenshot.png", "assets/img/**", ".github/social-preview.png"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 Giacomo Tenaglia <giacomo.tenaglia@gmail.com>"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
