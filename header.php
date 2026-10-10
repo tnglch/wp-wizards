@@ -45,4 +45,4 @@
 	<?php endif; ?>
 </header>
 
-<main id="contenu" class="page">
+<main id="contenu" class="site-main">

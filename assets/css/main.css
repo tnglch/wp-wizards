@@ -108,7 +108,7 @@ img {
 }
 
 .brand .custom-logo {
-	width: 112px;
+	width: 84px;
 	height: auto;
 	display: block;
 }
@@ -254,7 +254,7 @@ img {
 
 /* Page layout ----------------------------------------------------------- */
 
-.page {
+.site-main {
 	width: var(--wiz-container);
 	margin: 14px auto 36px;
 	display: grid;
@@ -845,6 +845,13 @@ button[type="submit"]:hover {
 
 .wiz-news .news-card {
 	height: 100%;
+	text-align: left;
+}
+
+.wiz-news .news-card > * {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	text-align: left;
 }
 
 .wiz-news .news-card a {
@@ -1018,7 +1025,7 @@ button[type="submit"]:hover {
 	}
 
 	.brand .custom-logo {
-		width: 84px;
+		width: 64px;
 	}
 }
 
