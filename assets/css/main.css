@@ -869,10 +869,9 @@ button[type="submit"]:hover {
 	max-height: 68px;
 }
 
-/* White-on-transparent logos are shown in black on the white tile. */
-.partners__logo--mono {
+/* Wide wordmarks would look oversized at the shared height. */
+.partners__logo--wide {
 	max-height: 32px;
-	filter: brightness(0);
 }
 
 @media (max-width: 560px) {

@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WIZARDS_VERSION', '1.0.7' );
+define( 'WIZARDS_VERSION', '1.0.8' );
 
 /**
  * Theme supports, menus and editor styles.
@@ -149,7 +149,7 @@ function wizards_logo() {
 /**
  * Partner logos shown in the footer. Filter `wizards_partners` to change the list.
  *
- * @return array<int, array{name: string, url: string, logo: string, width: int, height: int, class?: string}>
+ * @return array<int, array{name: string, url: string, logo: string, width: int, height: int, class?: string, background?: string}>
  */
 function wizards_partners() {
 	$dir      = get_template_directory_uri() . '/assets/img/partners/';
@@ -172,10 +172,12 @@ function wizards_partners() {
 		array(
 			'name'   => 'Swiss Ultimate Association',
 			'url'    => 'https://ultimate.ch/fr',
-			'logo'   => $dir . 'swiss-ultimate.svg',
-			'width'  => 584,
-			'height' => 119,
-			'class'  => 'partners__logo--mono',
+			'logo'       => $dir . 'swiss-ultimate.svg',
+			'width'      => 584,
+			'height'     => 119,
+			'class'      => 'partners__logo--wide',
+			// White logo on Swiss Ultimate's own header red, as on ultimate.ch.
+			'background' => '#e2231a',
 		),
 	);
 	return apply_filters( 'wizards_partners', $partners );

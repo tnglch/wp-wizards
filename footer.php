@@ -52,7 +52,8 @@
 			<ul class="partners">
 				<?php foreach ( $wizards_partners as $wizards_partner ) : ?>
 					<li>
-						<a class="partners__link" href="<?php echo esc_url( $wizards_partner['url'] ); ?>" rel="noopener">
+						<?php $wizards_bg = sanitize_hex_color( $wizards_partner['background'] ?? '' ); ?>
+						<a class="partners__link" href="<?php echo esc_url( $wizards_partner['url'] ); ?>" rel="noopener"<?php echo $wizards_bg ? ' style="background-color:' . esc_attr( $wizards_bg ) . '"' : ''; ?>>
 							<img
 								class="partners__logo <?php echo esc_attr( $wizards_partner['class'] ?? '' ); ?>"
 								src="<?php echo esc_url( $wizards_partner['logo'] ); ?>"
