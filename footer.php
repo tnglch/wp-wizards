@@ -45,6 +45,30 @@
 		</nav>
 	<?php endif; ?>
 
+	<?php $wizards_partners = wizards_partners(); ?>
+	<?php if ( $wizards_partners ) : ?>
+		<div class="site-footer__partners">
+			<h2 class="site-footer__title"><?php esc_html_e( 'Nos partenaires', 'wizards' ); ?></h2>
+			<ul class="partners">
+				<?php foreach ( $wizards_partners as $wizards_partner ) : ?>
+					<li>
+						<a class="partners__link" href="<?php echo esc_url( $wizards_partner['url'] ); ?>" rel="noopener">
+							<img
+								class="partners__logo <?php echo esc_attr( $wizards_partner['class'] ?? '' ); ?>"
+								src="<?php echo esc_url( $wizards_partner['logo'] ); ?>"
+								width="<?php echo (int) $wizards_partner['width']; ?>"
+								height="<?php echo (int) $wizards_partner['height']; ?>"
+								alt="<?php echo esc_attr( $wizards_partner['name'] ); ?>"
+								loading="lazy"
+								decoding="async"
+							>
+						</a>
+					</li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+	<?php endif; ?>
+
 	<p class="site-footer__legal">
 		&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> Geneva's Flying Disk Wizards
 	</p>

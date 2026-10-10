@@ -1,0 +1,9 @@
+Partner logo
+
+This logo is a trademark and copyrighted work of its owner. It is reproduced
+in this theme only to identify and link to a partner of Geneva's Flying Disk
+Wizards, as provided by that partner.
+
+All rights are reserved by the owner. The logo is NOT covered by the GPL,
+CC-BY-SA or any other license of this repository, and may not be reused,
+modified or redistributed outside this context without the owner's permission.

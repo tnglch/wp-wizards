@@ -29,3 +29,23 @@ path = ["assets/fonts/source-sans-3-*.woff2", "assets/fonts/OFL-source-sans-3.tx
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2010-2020 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'"
 SPDX-License-Identifier = "OFL-1.1"
+
+# Partner logos: trademarks of their owners, not covered by this repository's licenses.
+# Listed last so they take precedence over the assets/img/** annotation above.
+[[annotations]]
+path = "assets/img/partners/fonds-du-sport.png"
+precedence = "override"
+SPDX-FileCopyrightText = "Fonds du Sport, République et canton de Genève / Loterie Romande"
+SPDX-License-Identifier = "LicenseRef-Partner-Logo"
+
+[[annotations]]
+path = "assets/img/partners/ville-de-geneve.png"
+precedence = "override"
+SPDX-FileCopyrightText = "Ville de Genève"
+SPDX-License-Identifier = "LicenseRef-Partner-Logo"
+
+[[annotations]]
+path = "assets/img/partners/swiss-ultimate.svg"
+precedence = "override"
+SPDX-FileCopyrightText = "Swiss Ultimate Association"
+SPDX-License-Identifier = "LicenseRef-Partner-Logo"

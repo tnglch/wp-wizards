@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WIZARDS_VERSION', '1.0.5' );
+define( 'WIZARDS_VERSION', '1.0.6' );
 
 /**
  * Theme supports, menus and editor styles.
@@ -144,6 +144,40 @@ function wizards_logo() {
 		esc_url( $url ),
 		esc_attr( wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES ) )
 	);
+}
+
+/**
+ * Partner logos shown in the footer. Filter `wizards_partners` to change the list.
+ *
+ * @return array<int, array{name: string, url: string, logo: string, width: int, height: int, class?: string}>
+ */
+function wizards_partners() {
+	$dir      = get_template_directory_uri() . '/assets/img/partners/';
+	$partners = array(
+		array(
+			'name'   => 'Fonds du Sport, Genève, Loterie Romande',
+			'url'    => 'https://fondsdusport.ch',
+			'logo'   => $dir . 'fonds-du-sport.png',
+			'width'  => 643,
+			'height' => 150,
+		),
+		array(
+			'name'   => 'Ville de Genève, Service des sports',
+			'url'    => 'https://www.geneve.ch/themes/sport',
+			'logo'   => $dir . 'ville-de-geneve.png',
+			'width'  => 255,
+			'height' => 150,
+		),
+		array(
+			'name'   => 'Swiss Ultimate Association',
+			'url'    => 'https://ultimate.ch/fr',
+			'logo'   => $dir . 'swiss-ultimate.svg',
+			'width'  => 584,
+			'height' => 119,
+			'class'  => 'partners__logo--mono',
+		),
+	);
+	return apply_filters( 'wizards_partners', $partners );
 }
 
 /**
