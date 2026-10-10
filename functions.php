@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WIZARDS_VERSION', '1.0.6' );
+define( 'WIZARDS_VERSION', '1.0.7' );
 
 /**
  * Theme supports, menus and editor styles.
@@ -167,6 +167,7 @@ function wizards_partners() {
 			'logo'   => $dir . 'ville-de-geneve.png',
 			'width'  => 255,
 			'height' => 150,
+			'class'  => 'partners__logo--tall',
 		),
 		array(
 			'name'   => 'Swiss Ultimate Association',
