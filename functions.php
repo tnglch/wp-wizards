@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WIZARDS_VERSION', '1.0.1' );
+define( 'WIZARDS_VERSION', '1.0.2' );
 
 /**
  * Theme supports, menus and editor styles.
